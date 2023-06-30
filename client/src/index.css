@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poiret+One&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title: 'Poiret One', cursive;
+  --paragraph: 'Neucha', cursive;
+  --grayOrange: #8C623E;
+  --orange:#F28B50;
+  --brown:#40291C;
+  --red:#BF491F;
+  --black:#0D0908;
+  --white: #f0f0f0;
+}
+
+body{
+  background-color: var(--white);
+  font-family: var(--paragraph);
+  color: white;
+}
+
+h1, h2, h3, h4{
+  font-family: var(--title);
+}
+
+a{
+  text-decoration: none;
+}
