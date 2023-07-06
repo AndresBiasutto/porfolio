@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Neonderthaw&family=Raleway+Dots&family=Tilt+Neon&display=swap');
 
 html {
   box-sizing: border-box;
@@ -11,8 +11,10 @@ html {
 }
 
 :root {
-  --title: 'Poiret One', cursive;
-  --paragraph: 'Neucha', cursive;
+  --title: 'Neonderthaw', cursive;
+  --paragraph: 'Raleway Dots', cursive;
+  --button: 'Tilt Neon', cursive;
+  --button2: 'Bungee Hairline', cursive;
   --grayOrange: #8C623E;
   --orange:#F28B50;
   --brown:#40291C;
@@ -33,4 +35,5 @@ h1, h2, h3, h4{
 
 a{
   text-decoration: none;
+  
 }

@@ -8,7 +8,6 @@ const Landing = () => {
     <div className={styles.container}>
       <Nav />
       <Hero />
-
     </div>
 
 
