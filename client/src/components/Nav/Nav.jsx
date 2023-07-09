@@ -1,38 +1,61 @@
 import React from 'react'
 import "./Navbar.css"
+import { Link } from 'react-scroll';
 import { useState } from 'react';
+import About from '../About/About';
 
 const Nav = () => {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-    return (
-<>
-<div className="navbar">
-  <div className="nav_logo">logo</div>
-  <div className={`nav_items ${isMenuOpen && "open"}`}>
-      <a href="#">home</a>
-      <a href="#">about</a>
-      <a href="#">portfolio</a>
-      <a href="#">contact</a>
-    </div>
-    <div className={`nav_toggle ${isMenuOpen && "open"}`} onClick={handleMenuToggle}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-</div>
-</>
-      );
+  return (
+    <>
+      <div className="navbar">
+        <div className="nav_logo">logo</div>
+        <div className={`nav_items ${isMenuOpen && "open"}`}>
+          <Link
+            to="hero"
+            smooth={true}
+            duration={300}
+            onClick={handleMenuToggle}
+          >
+            home
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={700}
+            onClick={handleMenuToggle}
+          >
+            about
+          </Link>
+          <Link
+            to="porfolio"
+            smooth={true}
+            duration={300}
+            onClick={handleMenuToggle}
+          >
+            Portfolio
+          </Link>
+          <Link href="#">contact</Link>
+        </div>
+        <div className={`nav_toggle ${isMenuOpen && "open"}`} onClick={handleMenuToggle}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Nav
 
-  
+
         // <div className={styles.navContainer}>
         //   <h1>logo</h1>
         //   <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>

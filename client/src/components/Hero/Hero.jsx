@@ -3,7 +3,7 @@ import styles from "./Hero.module.css"
 
 const Hero = () => {
     return (
-        <div className={styles.container}>
+        <div id='hero' className={styles.container}>
             <div className={styles.cartel}>
                 <div className={styles.titles}>
                     <h1 className={styles.title}><span className={styles.blink}>A</span>nderes <span className={styles.blink}>B</span>iasutto</h1>
@@ -13,7 +13,7 @@ const Hero = () => {
                     <img className={styles.image} src="https://avatars.githubusercontent.com/u/70040532?v=4" alt="" />
                 </div>
             </div>
-            <button className={styles.button} >hablemos!</button>
+            <button className={styles.button} >let's talk!</button>
         </div>
     )
 }

@@ -37,3 +37,25 @@ a{
   text-decoration: none;
   
 }
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 15px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo del track */
+::-webkit-scrollbar-track {
+  background-color: var(--black); /* Color de fondo del track */
+}
+
+/* Estilo del thumb (el "mango" de la barra de desplazamiento) */
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Color del thumb al pasar el mouse */
+  border: 1px solid var(--red);
+  border-radius: 10px; /* Bordes redondeados del thumb */
+}
+
+/* Estilo del thumb al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--orange); /* Color del thumb al pasar el mouse */
+
+}
