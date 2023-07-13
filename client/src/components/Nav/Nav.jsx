@@ -15,12 +15,12 @@ const Nav = () => {
   return (
     <>
       <div className="navbar">
-        <div className="nav_logo">logo</div>
+        <div className="nav_logo">{"AB"} </div>
         <div className={`nav_items ${isMenuOpen && "open"}`}>
           <Link
             to="hero"
             smooth={true}
-            duration={300}
+            duration={700}
             onClick={handleMenuToggle}
           >
             home
@@ -36,12 +36,19 @@ const Nav = () => {
           <Link
             to="porfolio"
             smooth={true}
-            duration={300}
+            duration={700}
             onClick={handleMenuToggle}
           >
             Portfolio
           </Link>
-          <Link href="#">contact</Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={700}
+            onClick={handleMenuToggle}
+          >
+            Contact
+          </Link>
         </div>
         <div className={`nav_toggle ${isMenuOpen && "open"}`} onClick={handleMenuToggle}>
           <span></span>

@@ -1,11 +1,13 @@
 .container{
     position: relative;
-    height: 100vh;
+    height: 300vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: rgb(13,9,8);
+background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
 }
 .neonWall{
     display: flex;
@@ -14,9 +16,38 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-
 }
-
+.satelite{
+    width: 400px;
+    position: absolute;
+    top: -5%;
+    left: 50%;
+}
+.ciudad{
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    width: 100%;
+    object-fit: fill;
+}
+.charts{
+    padding: 310px;
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    max-width: 1200px;
+    position: absolute;
+    background: var(--brown);
+    border-radius: 10px;
+    right: -100%;
+    top: 50%;
+    width: 45%;
+    height: 500px;
+}
 .texts{
     display: flex;
     flex-direction: column;
@@ -29,14 +60,45 @@
 .textTitle{
     font-family: var(--button2);
     color: var(--orange);
+
+}
+.certificatesBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.certificados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.certificado{
+    margin-top: 2rem;
+    padding: 1px 10px;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: var(--title);
+    font-size: 2rem;
+    color: var(--red);
+    transition: all .4s ease;
+    border: none;
+    cursor: pointer;
+}
+.certificado:hover{
+    color: var(--orange);
     text-shadow: 0 0 10px var(--red),
-    0 0 20px var(--red),
-    0 0 30px var(--red),
-    0 0 40px var(--red),
-    0 0 70px var(--red),
-    0 0 80px var(--red),
-    0 0 100px var(--red),
-    0 0 150px var(--red);
+        0 0 20px var(--red),
+        0 0 30px var(--red),
+        0 0 40px var(--red),
+        0 0 70px var(--red),
+        0 0 80px var(--red),
+        0 0 100px var(--red),
+        0 0 150px var(--red);
+    transform: scale(1.1);
 }
 .skillsBox{
     display: flex;

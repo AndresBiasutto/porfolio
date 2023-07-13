@@ -13,7 +13,7 @@ const Hero = () => {
                     <img className={styles.image} src="https://avatars.githubusercontent.com/u/70040532?v=4" alt="" />
                 </div>
             </div>
-            <button className={styles.button} >let's talk!</button>
+            <button className={styles.button} >¨Get in touch!</button>
         </div>
     )
 }

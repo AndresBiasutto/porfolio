@@ -4,6 +4,7 @@ import Hero from '../../components/Hero/Hero'
 import Nav from '../../components/Nav/Nav'
 import About from '../../components/About/About'
 import Porfolio from '../../components/Porfolio/Porfolio'
+import Contact from '../../components/Contact/Contact'
 
 const Landing = () => {
   return (
@@ -12,6 +13,7 @@ const Landing = () => {
       <Hero />
       <About />
       <Porfolio />
+      <Contact />
     </div>
 
 
