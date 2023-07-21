@@ -1,4 +1,4 @@
-.container{
+.container {
     position: relative;
     height: 300vh;
     width: 100%;
@@ -6,10 +6,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(13,9,8);
-background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
+    background: rgb(13, 9, 8);
+    background: linear-gradient(176deg, rgba(13, 9, 8, 1) 45%, rgba(191, 73, 31, 1) 100%);
 }
-.neonWall{
+
+.neonWall {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,38 +18,43 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     height: 100%;
     width: 100%;
 }
-.satelite{
+
+.satelite {
     width: 400px;
     position: absolute;
     top: -5%;
     left: 50%;
 }
-.ciudad{
+
+.ciudad {
     position: absolute;
     bottom: -40%;
     left: 0;
     width: 100%;
     object-fit: fill;
 }
-.charts{
-    padding: 310px;
+
+.charts {
+    padding: 320px;
 }
-.chart{
+
+.chart {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    overflow: hidden;
-    max-width: 1200px;
+    flex-wrap: wrap;
     position: absolute;
-    background: var(--brown);
+    background: #0d0908c4;
     border-radius: 10px;
     right: -100%;
     top: 50%;
     width: 45%;
     height: 500px;
+    overflow: auto;
 }
-.texts{
+
+.texts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,50 +63,62 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     gap: 2rem;
     width: 90%;
 }
-.textTitle{
+
+.textTitle {
     font-family: var(--button2);
     color: var(--orange);
 
 }
-.certificatesBox{
+
+.certificatesBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.certificados{
+
+.certificados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+}
+
+.certificado {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 100%;
-}
-.certificado{
-    margin-top: 2rem;
     padding: 1px 10px;
+    border-radius: 10px;
     background-color: transparent;
-    font-weight: bold;
-    font-family: var(--title);
-    font-size: 2rem;
+    font-family: var(--button2);
+    font-size: .7rem;
     color: var(--red);
+    font-weight: bold;
     transition: all .4s ease;
-    border: none;
+    border: 1px solid var(--red);
     cursor: pointer;
 }
-.certificado:hover{
-    color: var(--orange);
-    text-shadow: 0 0 10px var(--red),
-        0 0 20px var(--red),
-        0 0 30px var(--red),
-        0 0 40px var(--red),
-        0 0 70px var(--red),
-        0 0 80px var(--red),
-        0 0 100px var(--red),
-        0 0 150px var(--red);
-    transform: scale(1.1);
+
+.certificado:hover {
+    color: orange;
+    border: 1px solid var(--orange);
+    box-shadow: 0 0 10px var(--red),
+        0 0 40px var(--red);
+    transform: scale(1.05);
 }
-.skillsBox{
+
+.certIco {
+    font-size: 1rem;
+}
+
+.skillsBox {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -108,7 +126,8 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     flex-wrap: wrap;
     gap: 10px;
 }
-.skillCard{
+
+.skillCard {
     min-width: 80px;
     display: flex;
     flex-direction: column;
@@ -117,19 +136,22 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     border: .1px solid var(--red);
     border-radius: 10px;
 }
-.skillLogo{
+
+.skillLogo {
     font-size: 3.5rem;
     padding: 5px;
     color: var(--red);
 }
-.textText{
+
+.textText {
     color: var(--orange);
     font-weight: bold;
     font-size: .8rem;
     line-height: 30px;
     text-align: justify;
 }
-.skillText{
+
+.skillText {
     width: 100%;
     position: relative;
     display: flex;
@@ -141,7 +163,8 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     font-size: .7rem;
     color: var(--orange);
 }
-.skillText::before{
+
+.skillText::before {
     position: absolute;
     top: 10px;
     content: "";
@@ -149,6 +172,61 @@ background: linear-gradient(176deg, rgba(13,9,8,1) 45%, rgba(191,73,31,1) 100%);
     width: 100%;
     background-color: var(--red);
     box-shadow: 0 0 10px var(--orange),
-    0 0 30px var(--red),
-    0 0 70px var(--red);
+        0 0 30px var(--red),
+        0 0 70px var(--red);
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Estilos para tablets */
+    .container {
+        height: 100%;
+    }
+
+
+
+    .parallax {
+        display: none;
+    }
+
+    .charts {
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .chart {
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        z-index: 2;
+    }
+
+    .satelite {
+        z-index: -100;
+        top: 0;
+        left: 23%;
+        z-index: 1;
+    }
+
+    .ciudad {
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas de escritorio */
 }

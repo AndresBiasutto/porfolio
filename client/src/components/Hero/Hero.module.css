@@ -9,7 +9,8 @@
 }
 
 .cartel {
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,7 +81,6 @@
 
 .button {
     margin-top: 2rem;
-    padding: 1px 10px;
     background-color: transparent;
     font-weight: bold;
     font-family: var(--title);
@@ -88,7 +88,6 @@
     color: var(--red);
     transition: all .4s ease;
     border: none;
-    transform: rotate(-15deg);
     cursor: pointer;
 }
 
@@ -200,6 +199,10 @@
 
 /* -----MOBILE----- */
 @media (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
     .cartel {
         flex-direction: column;
         gap: .8rem;
@@ -225,4 +228,36 @@
         border-radius: 5px;
         line-height: 1.5;
     }
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para tablets */
+    .cartel {
+        flex-direction: column;
+        gap: .8rem;
+        min-width: 290px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 200px;
+    }
+
+    .button {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--orange);
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Estilos para pantallas de escritorio */
 }
