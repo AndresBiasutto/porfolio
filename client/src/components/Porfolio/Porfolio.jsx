@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./Porfolio.module.css"
-import foto from "../../assets/img/paisajeMarte.png"
+import thisProject from "../../assets/portadaPorfolio.jpg"
+import dogsApi from "../../assets/portadaDogs.png"
+import sml from "../../assets/portadasml.jpg"
 import { TbBrandGithub } from "react-icons/tb";
 
 const Porfolio = () => {
@@ -9,60 +11,69 @@ const Porfolio = () => {
       <div className={styles.cardsContainer}>
         <h2>Some of my work</h2>
         <div className={styles.cardSlide}>
-          
-            <a href="#" target='_blank' className={styles.card}>
-              <img className={styles.image} src={foto} alt="" />
-              <div className={styles.info}>
-                <h3 className={styles.title}>Henry Dogs</h3>
-                <p className={styles.objetive}>Academic project</p>
-                <p className={styles.description}>Design and develop a dog app that includes: authentication, searches, combined filters, and sorting. </p>
-                <ul className={styles.tecList}>
-                  <li className={styles.objetive}>technologies:</li>
-                  <li className={styles.tec}>Redux.js</li>
-                  <li className={styles.tec}>Node.js</li>
-                  <li className={styles.tec}>SQL</li>
-                </ul>
-                <div className={styles.buttonPannel}>
-                  <a className={styles.gitButton} target='_blank' href="#"><TbBrandGithub /></a>
-                </div>
-              </div>
-            </a>
-        
-          <div className={styles.card}>
-            <img className={styles.image} src={foto} alt="" />
-            <div className={styles.info}>
-              <h3 className={styles.title}>Henry Dogs</h3>
-              <p className={styles.objetive}>Academic project</p>
-              <p className={styles.description}>Design and develop a dog app that includes: authentication, searches, combined filters, and sorting. </p>
-              <ul className={styles.tecList}>
-                <li className={styles.objetive}>technologies:</li>
-                <li className={styles.tec}>Redux.js</li>
-                <li className={styles.tec}>Node.js</li>
-                <li className={styles.tec}>SQL</li>
-              </ul>
-              <div className={styles.buttonPannel}>
-                <a className={styles.gitButton} target='_blank' href="#"><TbBrandGithub /></a>
-              </div>
-            </div>
-          </div>
 
-          <div className={styles.card}>
-            <img className={styles.image} src={foto} alt="" />
+          <a href="https://github.com/AndresBiasutto/porfolio/tree/main/client" target='_blank' className={styles.card}>
+            <img className={styles.image} src={thisProject} alt="" />
+            <div className={styles.info}>
+              <h3 className={styles.title}>This portfolio</h3>
+              <p className={styles.objetive}>Personal project</p>
+              <p className={styles.description}>Design and develop my personal landing page </p>
+              <ul className={styles.tecList}>
+                <li className={styles.objetive}>technologies:</li>
+                <li className={styles.tec}>React.js</li>
+                <li className={styles.tec}>Redux.js</li>
+                <li className={styles.tec}>Node.js</li>
+                <li className={styles.tec}>Express.js</li>
+                <li className={styles.tec}>MongoDB.js</li>
+              </ul>
+              <div className={styles.buttonPannel}>
+                <a className={styles.gitButton} target='_blank' href="https://github.com/AndresBiasutto/porfolio/tree/main/client"><TbBrandGithub /></a>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/AndresBiasutto/PI-DOGS-MAIN" target='_blank' className={styles.card}>
+
+            <img className={styles.image} src={dogsApi} alt="" />
             <div className={styles.info}>
               <h3 className={styles.title}>Henry Dogs</h3>
               <p className={styles.objetive}>Academic project</p>
               <p className={styles.description}>Design and develop a dog app that includes: authentication, searches, combined filters, and sorting. </p>
               <ul className={styles.tecList}>
                 <li className={styles.objetive}>technologies:</li>
-                <li className={styles.tec}>Redux.js</li>
-                <li className={styles.tec}>Node.js</li>
-                <li className={styles.tec}>SQL</li>
+                <li className={styles.description}>React.js</li>
+                <li className={styles.description}>Redux.js</li>
+                <li className={styles.description}>Node.js</li>
+                <li className={styles.description}>SQL</li>
               </ul>
               <div className={styles.buttonPannel}>
-                <a className={styles.gitButton} target='_blank' href="#"><TbBrandGithub /></a>
+                <a className={styles.gitButton} target='_blank' href="https://github.com/AndresBiasutto/PI-DOGS-MAIN"><TbBrandGithub /></a>
               </div>
             </div>
-          </div>
+
+          </a>
+
+          <a href="https://github.com/Smlappadm/sml-app/tree/develop-andres-2" target='_blank' className={styles.card}>
+
+            <img className={styles.image} src={sml} alt="" />
+            <div className={styles.info}>
+              <h3 className={styles.title}>Social Media Lab</h3>
+              <p className={styles.objetive}>Professional project</p>
+              <p className={styles.description}>I developed the system of roles, Authorization, and Authentication </p>
+              <ul className={styles.tecList}>
+                <li className={styles.objetive}>technologies:</li>
+                <li className={styles.description}>React.js</li>
+                <li className={styles.description}>Redux.js</li>
+                <li className={styles.description}>Node.js</li>
+                <li className={styles.description}>Express.js</li>
+                <li className={styles.description}>MongoDB.js</li>
+              </ul>
+              <div className={styles.buttonPannel}>
+                <a className={styles.gitButton} target='_blank' href="https://github.com/Smlappadm/sml-app/tree/develop-andres-2"><TbBrandGithub /></a>
+              </div>
+            </div>
+
+          </a>
         </div>
 
       </div>

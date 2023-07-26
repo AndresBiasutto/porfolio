@@ -78,30 +78,80 @@
     animation-delay: 1s;
 }
 
-
-.button {
-    margin-top: 2rem;
-    background-color: transparent;
-    font-weight: bold;
-    font-family: var(--title);
-    font-size: 2.4rem;
-    color: var(--red);
-    transition: all .4s ease;
-    border: none;
-    cursor: pointer;
+.buttonPannel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100px;
+    margin: 20px;
 }
 
-.button:hover {
-    color: var(--orange);
-    text-shadow: 0 0 10px var(--red),
-        0 0 20px var(--red),
-        0 0 30px var(--red),
-        0 0 40px var(--red),
-        0 0 70px var(--red),
-        0 0 80px var(--red),
-        0 0 100px var(--red),
-        0 0 150px var(--red);
-    transform: scale(1.1);
+.buttonDownload {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: var(--button2);
+    font-size: .7rem;
+    color: var(--red);
+    font-weight: bold;
+    transition: all .4s ease;
+    border: 1px solid var(--red);
+    height: 30px;
+    overflow: hidden;
+}
+
+.pdfcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pdfDownload {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 500px;
+    font-size: .5rem;
+}
+
+.pdfDownload:hover {
+    color: orange;
+    border: 1px solid var(--orange);
+    box-shadow: 0 0 10px var(--red),
+        0 0 40px var(--red);
+    transform: scale(1.05);
+}
+
+.ico {
+    font-size: 2rem;
+}
+
+.buttonDownload:hover {
+    color: orange;
+    border: none;
+    cursor: default;
+    border: 1px solid white;
+    padding-bottom: 100px;
+    border: 1px solid var(--orange);
+    box-shadow: 0 0 10px var(--red),
+        0 0 40px var(--red);
+    transform: scale(1.05);
 }
 
 /* -----ANIMATION----- */
@@ -198,10 +248,10 @@
 }
 
 /* -----MOBILE----- */
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
 
-}
 @media screen and (max-width: 480px) {
+
     /* Estilos para dispositivos móviles */
     .cartel {
         flex-direction: column;
@@ -231,6 +281,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     /* Estilos para tablets */
     .cartel {
         flex-direction: column;

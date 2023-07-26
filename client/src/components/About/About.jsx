@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from "./About.module.css"
 import { Parallax } from "react-parallax"
-import { TbBrandReact, TbBrandRedux, TbBrandGit, TbBrandMongodb, TbSql, TbBrandCss3, TbBrandHtml5, TbBrandJavascript, TbBrandLinkedin, TbMailAi } from "react-icons/tb";
+import { TbSql, } from "react-icons/tb";
 import { PiCertificate } from "react-icons/pi";
-import { BiLogoNodejs, BiLogoReact, BiLogoRedux, BiLogoGit, BiLogoPostgresql, BiLogoMongodb, BiLogoFigma, BiLogoGithub, BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiGitBranch } from "react-icons/bi"
+import { BiLogoNodejs, BiLogoReact, BiLogoRedux, BiLogoMongodb, BiLogoFigma, BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiGitBranch } from "react-icons/bi"
 import satelite from "../../assets/img/comunications.png"
 import estrellas from "../../assets/img/starsLarge.png"
 import ciudad from "../../assets/img/cityBig.png"
@@ -182,14 +182,14 @@ const About = () => {
                                     <div className={styles.certificatesBox}>
                                         <h2>Certificates</h2>
                                         <div className={styles.certificados}>
-                                            <a href="" target='_blank' className={styles.certificado} >
-                                                <PiCertificate className={styles.certIco} />certificado1
+                                            <a href="https://certificates.soyhenry.com/new-cert?id=ba51549c089180a45082c7ddd9ea765a8ac9a581f83293bdf5eab9ed2ca55448" target='_blank' className="button" >
+                                                <PiCertificate className={styles.certIco} />Full Stack web dev
                                             </a>
-                                            <a href="" target='_blank' className={styles.certificado} >
-                                                <PiCertificate className={styles.certIco} />certificado2
+                                            <a href="https://argentinaprograma.inti.gob.ar/mod/customcert/view.php?id=2748&downloadown=1" target='_blank' className="button" >
+                                                <PiCertificate className={styles.certIco} />Full Stack web dev
                                             </a>
-                                            <a href="" target='_blank' className={styles.certificado} >
-                                                <PiCertificate className={styles.certIco} />certificado3
+                                            <a href="https://www.freecodecamp.org/certification/andresbiasutto/responsive-web-design" target='_blank' className="button" >
+                                                <PiCertificate className={styles.certIco} />Responsive web design
                                             </a>
                                         </div>
 

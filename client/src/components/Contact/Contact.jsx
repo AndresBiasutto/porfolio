@@ -37,9 +37,8 @@ const Contact = () => {
       <h2>Get in touch!</h2>
       <div className={styles.insideBox}>
         <div className={styles.social}>
-          <BsLinkedin className={styles.icon} />
-          <BsFacebook className={styles.icon} />
-          <BsGithub className={styles.icon} />
+         <a href="https://www.linkedin.com/in/andres-biasutto/"> <BsLinkedin className={styles.icon} /></a>
+         <a href="https://github.com/AndresBiasutto"><BsGithub className={styles.icon} /></a>
         </div>
         <form className={styles.form} id='contact' onSubmit={handleSubmit}>
           <div className={styles.labelAndInput}>

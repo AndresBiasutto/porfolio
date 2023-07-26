@@ -56,6 +56,31 @@ input{
   color: var(--grayOrange);
 }
 
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: var(--button2);
+  font-size: .7rem;
+  color: var(--red);
+  font-weight: bold;
+  transition: all .4s ease;
+  border: 1px solid var(--red);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: orange;
+  border: 1px solid var(--orange);
+  box-shadow: 0 0 10px var(--red),
+      0 0 40px var(--red);
+  transform: scale(1.05);
+}
 
 /* Estilos para la barra de desplazamiento */
 ::-webkit-scrollbar {

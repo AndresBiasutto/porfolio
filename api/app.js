@@ -5,11 +5,12 @@ const morgan = require("morgan");
 const router= require("./src/routes/routes")
 const cors = require("cors");
 const path = require("path");
+const createRoles = require("./src/libs/initialRoleSetup")
 
 require("./db.js");
 
 const server = express();
-
+createRoles()
 
 
 server.use(cors());
