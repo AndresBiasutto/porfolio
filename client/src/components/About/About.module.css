@@ -125,7 +125,23 @@
     line-height: 30px;
     text-align: justify;
 }
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.image {
+    width: 10rem;
+    border-radius: 30rem;
+    border: 6px double var(--brown);
+    animation-name: imgOn;
+    animation-duration: 1s;
+    animation-timing-function: step-end;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
 .skillText {
     width: 100%;
     position: relative;
@@ -187,6 +203,7 @@
         justify-content: center;
         width: 95%;
         z-index: 2;
+        padding-bottom: 10px;
     }
 
     .satelite {

@@ -37,20 +37,21 @@ const Contact = () => {
       <h2>Get in touch!</h2>
       <div className={styles.insideBox}>
         <div className={styles.social}>
-         <a href="https://www.linkedin.com/in/andres-biasutto/"> <BsLinkedin className={styles.icon} /></a>
-         <a href="https://github.com/AndresBiasutto"><BsGithub className={styles.icon} /></a>
+         <a target='_blank' href="https://www.linkedin.com/in/andres-biasutto/"> <BsLinkedin className={styles.icon} /></a>
+         <a target='_blank' href="https://github.com/AndresBiasutto"><BsGithub className={styles.icon} /></a>
         </div>
-        <form className={styles.form} id='contact' onSubmit={handleSubmit}>
+        <form action="https://formsubmit.co/22be705f7ce3299001e410c4398ca5bc" method="POST" className={styles.form} id='contact'>
           <div className={styles.labelAndInput}>
             <label className={styles.label} htmlFor="nombre">Name:</label>
             <input
               className={styles.input}
               type="text"
               id="nombre"
+              name='name'
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
             />
-            <p><span className={styles.span}> {">"} </span> error</p>
+            <p><span className={styles.span}> {">"} </span> </p>
           </div>
 
           <div className={styles.labelAndInput}>
@@ -59,10 +60,11 @@ const Contact = () => {
               className={styles.input}
               type="email"
               id="email"
+              name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <p><span className={styles.span}> {">"} </span> error</p>
+            <p><span className={styles.span}> {">"} </span> </p>
           </div>
 
           <div className={styles.labelAndInput}>
@@ -70,10 +72,11 @@ const Contact = () => {
             <textarea
               className={`${styles.input} ${styles.textArea}` }
               id="descripcion"
+              name='description'
               value={descripcion}
               onChange={(e) => setDescripcion(e.target.value)}
             ></textarea>
-            <p><span className={styles.span}> {">"} </span> error</p>
+            <p><span className={styles.span}> {">"} </span> </p>
           </div>
 
           <button className={styles.send} type="submit">Send</button>

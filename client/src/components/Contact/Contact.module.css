@@ -129,9 +129,26 @@
 
 @media screen and (max-width: 768px) {
     /* Estilos para tablets */
+    .container{
+        height: 85vh;
+    }
+    .insideBox{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 10px;
+    }
 
+    .social{
+        flex-direction: row;
+    }
+    .form{
+        width: 95%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     /* Estilos para pantallas de escritorio */
+    .insideBox{
+        max-width: 1200px;
+    }
 }

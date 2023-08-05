@@ -34,10 +34,15 @@ const About = () => {
                         <div className={styles.chart}>
                             <div className={styles.texts}>
                                 <h2 className={styles.textTitle}>About me</h2>
-                                <p className={styles.textText}>Hello! I'm Andrés Biasutto, a Full Stack developer. My focus is on JavaScript, Node.js, React.js, Redux.js, Express.js, HTML, CSS, and SQL. I also have experience with Angular, PostgreSQL, MongoDB, Mongoose, and Tailwind.
-                                    I possess soft skills such as empathy, creativity, constant learning, and adaptability.
-                                    I also have knowledge in UX/UI design and previous experience as a web designer in WordPress.
-                                    I'm looking for exciting opportunities to apply my knowledge and experience in development and design. If you're interested in working together or want to learn more, feel free to contact me!</p>
+                                <p className={styles.textText}>Motivated and versatile professional with a background in commerce and industry, now pursuing a career
+                                    as a Full Stack web developer. Possessing valuable soft skills such as empathy, teamwork, adaptability,
+                                    and a strong commitment to continuous learning.
+                                    I completed a one-month internship at Social Media Lab, gaining hands-on experience in front-end and
+                                    back-end development. A firm believer in the power of collaboration and teamwork in dynamic
+                                    environments. Seeking exciting opportunities to apply technical expertise and creative skills in development
+                                    and design to make a positive impact. Open to new challenges and eager to contribute to innovative
+                                    projects. Feel free to reach out for further inquiries or to explore potential collaborations.
+                                </p>
                             </div>
                         </div>
                         <div className={styles.chart} style={{
@@ -90,16 +95,16 @@ const About = () => {
                                     </span>
                                 </div>
                                 <div className={styles.certificatesBox}>
-                                    <h2 className={styles.textTitle}>Certificates</h2>
+                                    <h2>Certificates</h2>
                                     <div className={styles.certificados}>
-                                        <a href="" target='_blank' className={styles.certificado} >
-                                            <PiCertificate className={styles.certIco} />certificado1
+                                        <a href="https://certificates.soyhenry.com/new-cert?id=ba51549c089180a45082c7ddd9ea765a8ac9a581f83293bdf5eab9ed2ca55448" target='_blank' className="button" >
+                                            <PiCertificate className={styles.certIco} />Full Stack web dev
                                         </a>
-                                        <a href="" target='_blank' className={styles.certificado} >
-                                            <PiCertificate className={styles.certIco} />certificado2
+                                        <a href="https://argentinaprograma.inti.gob.ar/mod/customcert/view.php?id=2748&downloadown=1" target='_blank' className="button" >
+                                            <PiCertificate className={styles.certIco} />Full Stack web dev
                                         </a>
-                                        <a href="" target='_blank' className={styles.certificado} >
-                                            <PiCertificate className={styles.certIco} />certificado3
+                                        <a href="https://www.freecodecamp.org/certification/andresbiasutto/responsive-web-design" target='_blank' className="button" >
+                                            <PiCertificate className={styles.certIco} />Responsive web design
                                         </a>
                                     </div>
 
@@ -122,10 +127,18 @@ const About = () => {
                             <div className={styles.chart} style={{ transform: `translate(-${percentage * 172}%, -50%)` }}>
                                 <div className={styles.texts}>
                                     <h2 >About me</h2>
-                                    <p className={styles.textText}>Hello! I'm Andrés Biasutto, a Full Stack developer. My focus is on JavaScript, Node.js, React.js, Redux.js, Express.js, HTML, CSS, and SQL. I also have experience with Angular, PostgreSQL, MongoDB, Mongoose, and Tailwind.
-                                        I possess soft skills such as empathy, creativity, constant learning, and adaptability.
-                                        I also have knowledge in UX/UI design and previous experience as a web designer in WordPress.
-                                        I'm looking for exciting opportunities to apply my knowledge and experience in development and design. If you're interested in working together or want to learn more, feel free to contact me!</p>
+                                    <div className={styles.design}>
+                                        <img className={styles.image} src="https://avatars.githubusercontent.com/u/70040532?v=4" alt="" />
+                                    </div>
+                                    <p className={styles.textText}>Motivated and versatile professional with a background in commerce and industry, now pursuing a career
+                                        as a Full Stack web developer. Possessing valuable soft skills such as empathy, teamwork, adaptability,
+                                        and a strong commitment to continuous learning.
+                                        I completed a one-month internship at Social Media Lab, gaining hands-on experience in front-end and
+                                        back-end development. A firm believer in the power of collaboration and teamwork in dynamic
+                                        environments. Seeking exciting opportunities to apply technical expertise and creative skills in development
+                                        and design to make a positive impact. Open to new challenges and eager to contribute to innovative
+                                        projects. Feel free to reach out for further inquiries or to explore potential collaborations.
+                                    </p>
                                 </div>
                             </div>
                             <div className={styles.chart} style={{

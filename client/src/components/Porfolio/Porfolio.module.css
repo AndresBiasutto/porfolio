@@ -1,4 +1,4 @@
-.container{
+.container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -6,18 +6,20 @@
     align-items: center;
     justify-content: center;
 }
-.cardsContainer{
+
+.cardsContainer {
     height: 83%;
     width: 100%;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     gap: 10px;
     justify-content: space-between;
 }
-.cardSlide{
+
+.cardSlide {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +29,8 @@
     height: 100%;
     width: 100%;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,25 +45,37 @@
     cursor: pointer;
     max-height: 600px;
 }
-.title{
+
+.title {
     font-family: var(--button2);
 }
-.objetive{
+
+.objetive {
     font-weight: bold;
 }
-.image{
+
+.image {
     filter: blur(0) hue-rotate(0);
     transform: scale(1.1);
     position: absolute;
-    height:100%;
+    height: 100%;
     object-fit: contain;
     transition: all .5s ease;
 }
-.description{
+
+.description {
     text-align: justify;
     font-size: .7rem;
 }
-.gitButton{
+.buttonPannel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.gitButton {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,15 +86,17 @@
     border: 1.5px solid var(--red);
     border-radius: 50px;
 }
-.gitButton:hover{
+
+.gitButton:hover {
     color: orange;
     border-color: orange;
     box-shadow: 0 0 10px var(--red),
         0 0 70px var(--red);
     transform: scale(1.05);
 }
-.info{
-    
+
+.info {
+
     background-color: rgba(0, 0, 0, 0.721);
     position: absolute;
     padding: 10px;
@@ -96,18 +113,21 @@
     border-radius: 10px;
     transition: all .3s ease;
 }
-.card:hover{
+
+.card:hover {
     border: 2px solid orange;
     box-shadow: 0 0 10px var(--red),
         0 0 70px var(--red);
     transform: scale(1.01);
     height: 85%;
 }
-.card:hover .image{
+
+.card:hover .image {
     filter: blur(4px) hue-rotate(14deg);
     transform: scale(1);
 }
-.card:hover .info{
+
+.card:hover .info {
     top: 50%;
     height: auto;
 }
@@ -118,31 +138,56 @@
 }
 
 @media screen and (max-width: 768px) {
+
     /* Estilos para tablets */
-    .cardsContainer{
+    .cardsContainer {
         height: 100%;
     }
-    .container{
-        height: 100%;
+
+    .container {
+        height: 110%;
+        padding: 20px;
     }
-.cardSlide{
-    height: 100%;
-    flex-direction: column;
-    gap: 20px;
-}
-.card{
-    height: 60vh;
-    width: 100%;
-    min-width: 90vw;
-    transition: none;
-}
-.card:hover{
-    border: 1px solid var(--red);
-    box-shadow: none;
-}
-.info{
-    top: 50%;
-}
+
+    .cardSlide {
+        height: 110%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        height: 60vh;
+        width: 100%;
+        min-width: 90vw;
+        transition: none;
+    }
+    .cardMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border: 1px solid var(--red);
+        border-radius: 10px;
+        width: 320px;
+        height: 340px;
+        overflow: hidden;
+        transition: all .5s ease;
+        cursor: pointer;
+        max-height: 600px;
+    }
+
+    .card:hover {
+        border: 1px solid var(--red);
+        box-shadow: none;
+        height: 60vh;
+        width: 100%;
+    }
+
+    .info {
+        top: 50%;
+        height: 85%;
+    }
 
 }
 
